@@ -9,33 +9,70 @@
         <header>
             <h1>facebook</h1>
             <form>
-                <label id="email-label" for="email">Email or phone</label>
-                <label id="emailfor="password">Password</label>
-                <br>
-                <input id="email" name="email" type="email" required>
-                <input id="email" name="email" type="password" required>
-                <br>
-                <a href="">Forgot account?</a>
+                <div id="email-div">
+                    <label for="email">Email or phone</label>
+                    <br>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div id="password-div">
+                    <label for="password">Password</label>
+                    <br>
+                    <input id="email" name="email" type="password" required>
+                    <input id="login" type="submit" value="Log In">
+                    <br>
+                    <a href="">Forgot account?</a>
+                </div>
             </form>
         </header>
         
         <main>
-            <div>
+            <div id="left-div">
                 <h1>Recent Logins</h1>
                 <p>Click your picture or add an account.</p>
             </div>
-            <div>
-                <h1>Create an account</h1>
+            <div id="right-div">
+                <h1>Create a New Account</h1>
                 <p>It's free and always will be.</p>
-                <form>
-                    <input type="text" placeholder="First name">
-                    <input type="text" placeholder="Last name">
+                <form action="">
+                    <input type="text" placeholder="First name" id="firstname" name="firstname" required>
+                    <input type="text" placeholder="Last name" id="lastname" name="lastname" required>
                     <br>
-                    <input type="text" placeholder="Mobile number or email">
-                    <input type="text" placeholder="New password">
+                    <input type="email" placeholder="Mobile number or email" id="new-email" name="new-email" required>
+                    <br>
+                    <input type="password" placeholder="New password" id="new-password" name="new-password" required>
+                    
+                    <p>Birthday</p>
+                    <select name="birth-month" id="birth-month" required>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                    <select name="birth-day" id="birth-day" required></select>
+                    <select name="birth-year" id="birth-year" required></select>
 
+                    <br>
+                    <br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <p id="policy">By clicking Sign Up, you agree to our <a>Terms</a>, <a>Data Policy</a> and <a>Cookies Policy</a>.
+                         You may receive SMS Notifications from us and can opt out any time.</p>
+                    <br>
+                    <input type="submit" value="Sign Up">
                 </form>
             </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
