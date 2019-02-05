@@ -24,6 +24,22 @@ input[type="button"], input[type="submit"]{
 div{
     position: absolute;
     top: 10%;
-    left: 50%;
-    width: 300px;
+    left: 55%;
+    width: 260px;
+    border: 1px gray solid;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#policy{
+    font-size: 11px;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+    text-decoration: underline;
 }
