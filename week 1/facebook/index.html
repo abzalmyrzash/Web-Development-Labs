@@ -29,6 +29,11 @@
             <div id="left-div">
                 <h1>Recent Logins</h1>
                 <p>Click your picture or add an account.</p>
+                <a><div class="choose-add-account">
+                    <img src="./add_an_account.png" width="160px">
+                    <p>Add Account</p>
+                </div>
+                </a>
             </div>
             <div id="right-div">
                 <h1>Create a New Account</h1>
@@ -42,23 +47,25 @@
                     <input type="password" placeholder="New password" id="new-password" name="new-password" required>
                     
                     <p>Birthday</p>
-                    <select name="birth-month" id="birth-month" required>
-                        <option value="1">Jan</option>
-                        <option value="2">Feb</option>
-                        <option value="3">Mar</option>
-                        <option value="4">Apr</option>
-                        <option value="5">May</option>
-                        <option value="6">Jun</option>
-                        <option value="7">Jul</option>
-                        <option value="8">Aug</option>
-                        <option value="9">Sep</option>
-                        <option value="10">Oct</option>
-                        <option value="11">Nov</option>
-                        <option value="12">Dec</option>
-                    </select>
-                    <select name="birth-day" id="birth-day" required></select>
-                    <select name="birth-year" id="birth-year" required></select>
-
+                    <div id="birth-date-div">
+                        <select name="birth-month" id="birth-month" required>
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        <select name="birth-day" id="birth-day" required></select>
+                        <select name="birth-year" id="birth-year" required></select>
+                    </div>
+                    <a id="why-birthday">Why do I need to provide my birthday?</a>
                     <br>
                     <br>
                     <input type="radio" id="female" name="gender" value="female" required>
@@ -70,6 +77,8 @@
                          You may receive SMS Notifications from us and can opt out any time.</p>
                     <br>
                     <input type="submit" value="Sign Up">
+                    <br><br><br>
+                    <b id="create-a-page"><a>Create a page</a> for a celebrity, band or business.</b>
                 </form>
             </div>
         </main>

@@ -99,11 +99,53 @@ main #right-div input[type="submit"]{
 }
 
 #policy{
-    font-size: 12px;
+    font-size: 11px;
     color: gray;
     margin-right: 350px;
 }
 
-#policy a{
+main a{
     color: rgb(45, 57, 219);
+}
+
+#why-birthday{
+    font-size: 11px;
+    position: relative;
+    bottom: 5px;
+    margin-right: 30%;
+}
+
+#birth-date-div{
+    float: left;
+    margin-right: 10px;
+}
+
+#birth-date-div select{
+    height: 30px;
+}
+
+#create-a-page{
+    font-size: 13px;
+    color: rgb(92, 88, 88);
+}
+
+
+.choose-add-account{
+    border: 1px darkgray solid;
+    border-radius: 2%;
+    width: 160px;
+}
+
+.choose-add-account p{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+#left-div a{
+    text-decoration: none;
+}
+
+.choose-add-account:hover{
+    border: 2px rgb(214, 206, 206) solid;
 }
