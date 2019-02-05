@@ -1,0 +1,29 @@
+body{
+    font-family: "Helvetica", sans-serif;
+}
+
+span hr{
+    display: inline-block;
+    width: 100px;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(252, 252, 252);
+    margin: 5px;
+    border-radius: 5px;
+}
+
+input[type="button"], input[type="submit"]{
+    background-color: blue;
+    color: white;
+
+}
+
+div{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 300px;
+}
