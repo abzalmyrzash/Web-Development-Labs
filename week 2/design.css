@@ -1,0 +1,65 @@
+body{
+    position: relative;
+    font-family: "Arial", sans-serif;
+    left: 30%;
+}
+
+#message-box{
+    width: 150px;
+    font-size: 14px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: red;
+}
+
+#item{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+
+#table td{
+    width: 500px;
+    height: 40px;
+}
+
+#table td label{
+    margin-left: 20px;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 7px;
+    border-color: darkgray;
+    vertical-align: center;
+    font-size: 16px;
+}
+
+.deleteButton {
+    float: right;
+    background-image: url("recycle_bin.jpg");
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: none;
+}
+
+#button {
+    height: 30px;
+    border-radius: 5px;
+
+    background-color: rgb(50, 46, 243);
+    color: white;
+}
+
+h1{
+    font-weight: normal;
+}
