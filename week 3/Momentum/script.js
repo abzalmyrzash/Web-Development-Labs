@@ -27,6 +27,7 @@ function checkTime(i) {
 }
 
 startTime();
+document.getElementById("button").addEventListener("click", buttonClicked);
 
 var item = document.getElementById("item");
 var table = document.getElementById("table");
