@@ -1,7 +1,6 @@
 {
    "name": "Abzal's Momentum",
    "version": "1.0",
-   "permissions": ["storage"],
    "chrome_url_overrides" : {
       "newtab": "index.html"
     },
