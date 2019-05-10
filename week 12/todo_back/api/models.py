@@ -16,7 +16,7 @@ class TaskList(models.Model):
 
 class Task(models.Model):
 	name = models.CharField(max_length = 200)
-	created_at = models.DateTimeField()
+	created_at = models.DateTimeField(auto_now_add=True)
 	due_on = models.DateTimeField()
 	choices = (
 		('DO', 'Done'),
@@ -34,6 +34,4 @@ class Task(models.Model):
 			'created_at': self.created_at,
 			'due_on': self.due_on,
 			'status': self.status,
-		}
-
-
+}

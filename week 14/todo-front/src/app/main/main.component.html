@@ -1,0 +1,71 @@
+
+<ng-container *ngIf="!logged">
+  <div>
+    <div><input type="text" [(ngModel)]="login"></div>
+    <div><input type="text" [(ngModel)]="password"></div>
+    <div><button (click)="auth()">Log in</button></div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="logged">
+  CREATE TASKLIST:
+  <div>
+    <input type="text" [(ngModel)]="name">
+    <button (click)="createTaskList()">CREATE</button>
+  </div>
+
+  CREATE TASK:
+  <div>
+    <span><input type="text" [(ngModel)]="taskName"></span>
+    <span><input type="text" [(ngModel)]="due_on"></span>
+    <span><input type="text" [(ngModel)]="task_list"></span>
+    <button (click) = "createTask()">CREATE</button>
+  </div>
+
+  TASK_LISTS:
+  <div *ngIf="!loading">
+    Loading...
+  </div>
+
+  <ng-container *ngIf="loading">
+    <div>
+      <div *ngFor="let list of task_lists" (click)="getTasks(list); task_list_cur=list">
+        <span (click)="getTasks(list, suffix)">
+          <input type="text" [(ngModel)]="list.name">
+        </span>
+        <button (click)="deleteTaskList(list)">Delete</button>
+        <button (click)="updateTaskList(list)">Update</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <br/>
+  TASKS:
+  <div>
+    <span>
+      <input type="text" placeholder="SEARCH" [(ngModel)]="search_suffix">
+    </span>
+    <span (click)="getTasks(task_list_cur, '?search=' + search_suffix)">
+      <button>Search by</button>
+    </span>
+    <span>
+      <input type="text" placeholder="ORDERING" [(ngModel)]="order_suffix">
+    </span>
+    <span (click)="getTasks(task_list_cur, '?ordering=' + order_suffix)">
+      <button>Order by</button>
+    </span>
+    <span>
+      <input type="text" placeholder="FILTER" [(ngModel)]="filter_suffix">
+    </span>
+    <span (click)="getTasks(task_list_cur, '?' + filter_suffix)">
+      <button>Filter by</button>
+    </span>
+  </div>
+
+  <div>
+    <div *ngFor="let task of tasks">{{task.id}} - {{task.name}} - {{task.created_at}} - {{task.due_on}}</div>
+  </div>
+
+  <div (click)="logout()"><button>Log out</button></div>
+
+</ng-container>

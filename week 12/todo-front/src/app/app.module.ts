@@ -5,7 +5,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { ProviderService } from './shared/services/provider.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,9 +15,10 @@ import { ProviderService } from './shared/services/provider.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [ProviderService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
